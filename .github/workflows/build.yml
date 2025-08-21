@@ -1,0 +1,20 @@
+name: build
+on:
+  push: { branches: [ main ] }
+  pull_request:
+
+jobs:
+  linux-cuda-build:
+    runs-on: ubuntu-latest
+    container: nvidia/cuda:12.1.0-devel-ubuntu20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install deps (cmake, g++)
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends cmake g++ make
+      - name: Configure
+        run: cmake -S . -B build -DGPU_ARCHS=75
+      - name: Build
+        run: cmake --build build -j
