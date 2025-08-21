@@ -1,0 +1,43 @@
+# Build artifacts
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Objects / libs / bins
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.exe
+
+# Nsight / CUDA profiler traces (huge)
+*.nsys-rep
+*.ncu-rep
+*.qdrep
+*.nvvp
+
+# Logs & scratch
+*.log
+logs/
+*.tmp
+*.cache
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Python cache (if any)
+__pycache__/
+*.pyc
+.vscode-server/ .cursor-server/ .windsurf-server/ .lightning_studio/
+.bash_history
+build/ CMakeFiles/ CMakeCache.txt cmake_install.cmake Makefile
+*.o *.obj *.a *.so *.dll *.exe
+*.nsys-rep *.ncu-rep *.qdrep *.nvvp
+__pycache__/ *.pyc .venv/
+*.log logs/ *.tmp *.cache

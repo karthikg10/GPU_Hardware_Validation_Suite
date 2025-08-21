@@ -1,0 +1,3 @@
+[GPU 0] Tesla T4, 15102 MiB global mem
+{"interconnect":{"p2p_GBs":null, "note":"single GPU or no P2P"}}
+{"gpu":0,"mem":{"h2d_GBs":6.26,"d2h_GBs":6.60,"dev_GBs":117.02,"errors":0},"compute":{"GFLOPs":7284.51,"errors":0}}
